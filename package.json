@@ -1,0 +1,28 @@
+{
+  "name": "vue-ts",
+  "version": "1.0.0",
+  "description": "simple integration between vue and typescript using es6 modules without webpack or anything else",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc && npm run post_compile",
+    "compile-watch": "tsc-watch --onSuccess \"npm run post_compile\"",
+    "post_compile": "node utils/post-compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "typescript",
+    "es6"
+  ],
+  "config": {
+    "vueRelativePath": "./lib/vue.esm.browser.js"
+  },
+  "author": "Franklin Rolando Orellana Pineda",
+  "license": "MIT",
+  "devDependencies": {
+    "tsc-watch": "^1.1.39",
+    "typescript": "^3.5.2",
+    "vue": "^2.6.10"
+  }
+}
